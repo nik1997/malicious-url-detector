@@ -6,19 +6,19 @@
     "description": "A extension that detects malicious URL using machine learning.",
 
     "background": {
-        "scripts" : ["background.js"]
+        "scripts" : ["tf.min.js", "background.js"]
     },
 
     "browser_action": {
         "default_popup": "popup.html"
     },
 
-    "content_scripts": [ {
-        "matches": ["http://*/*", "https://*/*"],
-        "js": ["contentscript.js"]
-      } ],
 
     "permissions": [
         "tabs"
+    ],
+
+    "web_accessible_resources": [
+        "model/tokenInfo.json"
     ]
 }
