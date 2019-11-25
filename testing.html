@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.1.1/d3.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <h1>Testing of Loading the model</h1>
+    </body>
+        <!-- <script src='token_list.js'></script> -->
+        <!-- <script src='tokenCount.js'></script> -->
+        <script src='testing.js'></script>
+</html>
+<!-- 
+def getTokens(input):
+	tokensBySlash = str(input.encode('utf-8')).split('/')	#get tokens after splitting by slash
+	allTokens = []
+	for i in tokensBySlash:
+		tokens = str(i).split('-')	#get tokens after splitting by dash
+		tokensByDot = []
+		for j in range(0,len(tokens)):
+			tempTokens = str(tokens[j]).split('.')	#get tokens after splitting by dot
+			tokensByDot = tokensByDot + tempTokens
+		allTokens = allTokens + tokens + tokensByDot
+	allTokens = list(set(allTokens))	#remove redundant tokens
+	if 'com' in allTokens:
+		allTokens.remove('com')	#removing .com since it occurs a lot of times and it should not be included in our features
+	return allTokens -->
